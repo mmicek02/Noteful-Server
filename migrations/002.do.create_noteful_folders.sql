@@ -5,5 +5,5 @@ CREATE TABLE noteful_folders (
 
 ALTER TABLE noteful_notes
     ADD COLUMN
-        folder_id INTEGER REFERENCES noteful_folders(id)
+        folderId INTEGER REFERENCES noteful_folders(id)
         ON DELETE SET NULL;
